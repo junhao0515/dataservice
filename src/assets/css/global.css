@@ -1,0 +1,40 @@
+html,
+body,
+#app {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+/* 最小宽度 */
+  min-width: 1024px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* 轮播图hover 左右按钮  */
+.el-carousel__arrow {
+  font-size: 54px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0,0,0,.5)
+}
+/* 右边按钮 */
+.el-carousel__arrow--right {
+  right: 36px;
+}
+/*清浮动*/
+.clearfix::after {
+	content:"";
+	height: 0px;
+	line-height: 0px;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+/*兼容IE*/
+.clearfix {
+	zoom: 1;
+}
